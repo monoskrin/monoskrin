@@ -1,0 +1,11 @@
+@media print {
+	nav[role='navigation'] { flex-direction: row; }
+	footer[role='contentinfo'], nav[role='navigation'] div, section.postnav, .promo { display: none; }
+	html { font-size: 13px; line-height: 1.5; max-width: 38rem; margin-left: auto; margin-right: auto; }
+	body h1:first-of-type { margin-top: 5rem; line-height:1.1; }
+	article header p { line-height: 1.1; }
+	body { color: #000; background-color: #fff; font-size: 13px; max-width: 40em; margin-left: auto; margin-right: auto;  }
+	a { color: #000; }
+	nav ul li { display: none; }
+	article.custom p, article.custom blockquote { color: #000 !important; }
+}
