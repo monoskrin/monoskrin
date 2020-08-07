@@ -19,6 +19,7 @@ Variables (Page colors at bottom of doc)
 
 /* Light Mode Colors */
 @media screen and (prefers-color-scheme: light) {
+  html {
   --color-base: rgba(0,0,0,0.7);
   --color-mid: rgba(0,0,0,0.4);
   --color-block: rgba(0,0,0,0.2);
