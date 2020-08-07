@@ -173,7 +173,7 @@ footer p { margin: 0; }
   /* nav a { font-size: var(--font-body); } */
   main, footer { grid-column: 2 / 3; }
   nav div { display: block; }
-  nav div:nth-child(4) { margin-top: var(--font-line-height); }
+  nav div:nth-child(7) { margin-top: var(--font-line-height); }
 }
 
 /* -----------------------------------
