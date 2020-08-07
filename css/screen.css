@@ -17,9 +17,7 @@ Variables (Page colors at bottom of doc)
 
 /* Colors */
 
-/* Light Mode Colors */
-@media screen and (prefers-color-scheme: light) {
-  html {
+html {
   --color-base: rgba(0,0,0,0.7);
   --color-mid: rgba(0,0,0,0.4);
   --color-block: rgba(0,0,0,0.2);
@@ -88,7 +86,29 @@ Fonts
   src:  url('/fonts/soehne-web-halbfett.woff2') format('woff2'),
         url('/fonts/soehne-web-halbfett.woff') format('woff');
 }
+  @font-face {
+    font-family: Mosk;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/mosk-600.woff2') format("woff2"), url('/fonts/mosk-600.woff') format("woff")
+  }
 
+  @font-face {
+    font-family: Mosk;
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/fonts/mosk-900.woff2') format("woff2"), url('/fonts/mosk-900.woff') format("woff")
+  }
+
+  @font-face {
+    font-family: Jenthill;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/jenthill.woff2') format("woff2"), url('/fonts/jenthill.woff') format("woff")
+  }
 
 /* -----------------------------------
 Base, Nav, Footer
