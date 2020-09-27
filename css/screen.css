@@ -144,7 +144,7 @@ h3 {
   font-family: var(--font-sans);
 }
 
-time {
+time, header span {
   font-family: var(--font-sans);
   font-size: var(--font-s);
   color: var(--color-mid);
