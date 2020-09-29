@@ -1,0 +1,27 @@
+{
+  "name": "Monoskrin",
+  "short_name": "Monoskrin",
+  "description": "Riset/penelitian film, laporan kepenontonan, ulasan sinema, esai film teoretis & kritis, artikel teknis film, opini & evaluasi film internasional.' name='description",
+  "icons": [
+    {
+      "src": "https://lh4.googleusercontent.com/-p6O8-vkDfNQ/X3KLrm3e_5I/AAAAAAAACm4/ZcFl4H_pFh4VKDOw30CMV4QCv7Ge0LnpwCLcBGAsYHQ/w192-h192-p-k-no-nu/monoskrin.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://lh4.googleusercontent.com/-p6O8-vkDfNQ/X3KLrm3e_5I/AAAAAAAACm4/ZcFl4H_pFh4VKDOw30CMV4QCv7Ge0LnpwCLcBGAsYHQ/w256-h256-p-k-no-nu/monoskrin.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://lh4.googleusercontent.com/-p6O8-vkDfNQ/X3KLrm3e_5I/AAAAAAAACm4/ZcFl4H_pFh4VKDOw30CMV4QCv7Ge0LnpwCLcBGAsYHQ/w512-h512-p-k-no-nu/monoskrin.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1A1D1F",
+  "background_color": "#1A1D1F",
+  "display": "standalone",
+  "orientation": "natural",
+  "start_url": "/"
+}
