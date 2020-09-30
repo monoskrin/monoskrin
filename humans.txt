@@ -1,0 +1,33 @@
+/* TEAM */
+
+	Main Idea: Nashrullah Ali Fauzi (Nash)
+	Twitter: @nashrullahalifa
+	From: Kudus, Indonesia
+	
+	Founder: Nashrullah Ali Fauzi
+	Twitter: @nashrullahalifa
+	From: Kudus, Indonesia
+
+	Head Office: Nurbaiti Fitriyani
+	Twitter: @nurbaitifitriyani
+	From: Kudus, Indonesia
+
+	Photographer, Video Editor: Kanya Ahayu Ning Yatika Akasawakya
+	Twitter: @kanyaahayu
+	From: Kudus, Indonesia
+	
+
+/* THANKS */
+
+	Idea: Kanya Ahayu Ning Yatika Akasawakya
+	Twitter: @kanyaahayu
+	From: Kudus, Indonesia
+		
+
+/* SITE */
+
+	Last update: 2020/09/30
+	Language: Indonesia
+	Doctype: HTML5
+	Components: Blogger, Google, etc.
+	IDE: Textmate, etc.
