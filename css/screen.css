@@ -127,7 +127,7 @@ body {
 }
 
 main p, main blockquote, main ol, main ul,
-main h2, main h3, main h4, main details, main footer, main table, main dl, main form, main iframe {
+main h2, main h3, main h4, main details, main footer, main table, main dl, main form, main iframe, main div {
   max-width: var(--spacing-maxwidth);
   margin-left: auto;
   margin-right: auto;
