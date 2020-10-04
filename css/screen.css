@@ -77,6 +77,30 @@ Fonts
         url('/fonts/soehne-web-halbfett.woff') format('woff');
 }
 
+  @font-face {
+    font-family: Mosk;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/mosk-600.woff2') format("woff2"), url('/fonts/mosk-600.woff') format("woff")
+  }
+
+  @font-face {
+    font-family: Mosk;
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/fonts/mosk-900.woff2') format("woff2"), url('/fonts/mosk-900.woff') format("woff")
+  }
+
+  @font-face {
+    font-family: Jenthill;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/jenthill.woff2') format("woff2"), url('/fonts/jenthill.woff') format("woff")
+  }
+
 /* -----------------------------------
 Layout
 -------------------------------------- */
