@@ -3,36 +3,39 @@ Variables
 -------------------------------------- */
 
 :root {
-    --font-serif: "IvarTxt","Iowan Old Style","Iowan","Charter","Times New Roman",Times,serif;
+    --font-serif: "IvarTxt","Iowan Old Style","Iowan","Charter",Georgia,"Times New Roman",Times,serif;
     --font-sans: "Soehne",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     --font-mono: SFMono-Regular,Consolas,Inconsolatas,Liberation Mono,Menlo,monospace;
 
-    --font-default: calc(0.4vw + 16px);
-    --font-sansmatch: 0.93rem;
+    --font-default: clamp(16px, 2vw + 8px, 22px);
+    --font-sansmatch: 0.91rem;
     --font-s: 0.85rem;
+    --font-m: 1.2rem;
     --font-l: 1.5rem;
-    --font-line-height: calc(var(--font-default) * 1.55);
+    --font-line-height: calc(var(--font-default) * 1.65);
 
     --spacing-s: calc(var(--font-line-height) * 0.5);
     --spacing-m: calc(var(--font-line-height) * 1);
     --spacing-l: calc(var(--font-line-height) * 3);
     --spacing-xl: calc(5rem + 10vh);
 
-    --spacing-maxwidth:30rem;
+    --spacing-maxwidth:32rem;
     --spacing-maxwidth-lg: calc(var(--spacing-maxwidth) * 1.5);
 
     --color-bg: #fafafa;
-    --color-default: #222424;
-    --color-mid: #616565;
+    --color-default: #333;
+    --color-mid: #888;
     --color-dim: #dad4d4;
+    --color-link: #07a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #222424;
+    --color-bg: #000;
     --color-default: #fafafa;
-    --color-mid: #858888;
-    --color-dim: #444848;
+    --color-mid: #6a6a6a;
+    --color-dim: #292929;
+    --color-link: #0cf;
   }
 }
 
@@ -111,7 +114,7 @@ html {
   font-size: var(--font-default);
   line-height: var(--font-line-height);
   font-family: var(--font-serif);
-  font-feature-settings: "kern", "liga";
+  font-feature-settings: "kern", "liga", "onum";
   -webkit-font-smoothing: antialiased;
 }
 
@@ -124,7 +127,7 @@ body {
 }
 
 main p, main blockquote, main ol, main ul,
-main h2, main h3, main h4, main h5, main h6, main dl, main details, main form, main footer {
+main h2, main h3 {
   max-width: var(--spacing-maxwidth);
   margin-left: auto;
   margin-right: auto;
@@ -158,22 +161,20 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-sansmatch);
+  font-size: var(--font-m);
+  letter-spacing: 0.01em;
   font-family: var(--font-sans);
-  margin-top: var(--spacing-m);
+  margin-top: var(--spacing-l);
 }
 
 h3 {
   font-size: var(--font-s);
+  font-weight: bold;
+  letter-spacing: 0.02em;
   font-family: var(--font-sans);
 }
 
-h4 {
-  font-size: var(--font-m);
-  font-family: var(--font-sans);
-}
-
-time, header span {
+time {
   font-family: var(--font-sans);
   font-size: var(--font-s);
   color: var(--color-mid);
@@ -203,10 +204,20 @@ figcaption a { color: var(--color-mid); }
 
 a {
   color: var(--color-default);
-  text-decoration: underline;
+  /* text-decoration: underline;
   text-decoration-color: var(--color-mid);
   text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-underline-offset: 3px; */
+  text-decoration:none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-link);
+}
+
+p a, li a, figcaption a {
+  border-bottom: 1px solid var(--color-link);
 }
 
 pre.code {
@@ -360,6 +371,9 @@ section.promo a {
   text-decoration: none;
   line-height:1.55;
 }
+
+@media (prefers-color-scheme: dark) { section.promo a { background-color: #111; } }
+
 section.promo a div { margin: var(--spacing-s) 0 var(--spacing-m); }
 section.promo a img, section.promo a svg { display: block; width: 100%; margin: 0 auto; }
 section.promo a img { max-width: 9rem; }
@@ -485,6 +499,8 @@ section.posts li a {
   display: inline-block;
   order: 2;
   width: calc(100% - 7em);
+  border: none;
+  font-weight: bold;
 }
 
 /* -----------------------------------
