@@ -116,11 +116,6 @@ html {
   font-family: var(--font-serif);
   font-feature-settings: "kern", "liga", "onum";
   -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-  /*-webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;*/
 }
 
 body {
