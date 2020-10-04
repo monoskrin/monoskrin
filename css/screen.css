@@ -494,7 +494,7 @@ section.posts li {
   margin-bottom: calc(0.25 * var(--spacing-s));
 }
 
-section.posts li time { order: 1; width: 5em; }
+section.posts li time { order: 1; width: 7em; }
 section.posts li a {
   display: inline-block;
   order: 2;
