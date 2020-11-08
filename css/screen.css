@@ -661,8 +661,7 @@ Ads
   border: 1px solid rgba(0, 0, 0, .05);
   color: rgba(0, 0, 0, .25);
   text-align: center;
-  position: relative;
-  overflow: hidden
+  position: relative
 }
 .ads a {
   color: inherit !important;
@@ -683,6 +682,4 @@ Ads
 .ads-banners {
   width: 100%;
   max-width: 970px;
-  height: auto;
-  line-height: normal
 }
