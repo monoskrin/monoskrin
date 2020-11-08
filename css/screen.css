@@ -679,19 +679,7 @@ Ads
   outline: dotted 1px;
   outline-offset: -1px
 }
-.ads-125x125 {
-  width: 100%;
-  max-width: 125px;
-  height: 125px;
-  line-height: 125px
-}
 
-.ads-250x125 {
-  width: 100%;
-  max-width: 250px;
-  height: 125px;
-  line-height: 125px
-}
 .ads-970x90 {
   width: 100%;
   max-width: 970px;
