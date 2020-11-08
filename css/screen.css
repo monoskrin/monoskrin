@@ -681,5 +681,9 @@ Ads
 
 .ads-banners {
   width: 100%;
-  max-width: 970px;
+  max-width: 970px
+}
+.ads-banners img {
+  width: 100%;
+  max-width: 970px
 }
