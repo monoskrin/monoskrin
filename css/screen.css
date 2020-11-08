@@ -683,6 +683,6 @@ Ads
 .ads-970x90 {
   width: 100%;
   max-width: 970px;
-  height: 90px;
-  line-height: 90px
+  height: auto;
+  line-height: normal
 }
