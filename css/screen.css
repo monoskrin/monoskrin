@@ -10,7 +10,7 @@ Variables
     --font-default: clamp(16px, 2vw + 8px, 22px);
     --font-sansmatch: 0.91rem;
     --font-s: 0.85rem;
-    --font-m: 1.2rem;
+    --font-m: 1rem;
     --font-l: 1.5rem;
     --font-line-height: calc(var(--font-default) * 1.65);
 
@@ -22,20 +22,20 @@ Variables
     --spacing-maxwidth:32rem;
     --spacing-maxwidth-lg: calc(var(--spacing-maxwidth) * 1.5);
 
-    --color-bg: #fafafa;
-    --color-default: #333;
-    --color-mid: #888;
+    --color-bg: #f8f7f5;
+    --color-default: #4f4e55;
+    --color-mid: #a5a2a7;
     --color-dim: #dad4d4;
-    --color-link: #07a;
+    --color-link: #378d65;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #000;
+    --color-bg: #212120;
     --color-default: #fafafa;
     --color-mid: #6a6a6a;
-    --color-dim: #292929;
-    --color-link: #0cf;
+    --color-dim: #313130;
+    --color-link: #5cb88d;
   }
 }
 
@@ -127,10 +127,14 @@ body {
 }
 
 main p, main blockquote, main ol, main ul,
-main h2, main h3, main h4, main details, main footer, main table, main dl, main form, main iframe, main div {
+main h2, main h3 {
   max-width: var(--spacing-maxwidth);
   margin-left: auto;
   margin-right: auto;
+}
+
+main p, main blockquote, main ol, main ul {
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* -----------------------------------
@@ -174,7 +178,7 @@ h3 {
   font-family: var(--font-sans);
 }
 
-time, header span {
+time {
   font-family: var(--font-sans);
   font-size: var(--font-s);
   color: var(--color-mid);
@@ -200,7 +204,7 @@ figcaption {
   text-align: center;
 }
 
-figcaption a { color: var(--color-mid); }
+figcaption a { color: var(--color-mid); border-color: var(--color-mid) !important; }
 
 a {
   color: var(--color-default);
@@ -273,6 +277,9 @@ figure img { width: 100%; }
     margin-left: auto;
     margin-right: auto;
 }
+
+.twoup { display: grid; grid-gap: var(--spacing-m); }
+@media (min-width: 700px) { .twoup { grid-template-columns: 1fr 1fr; } }
 
 .sans { font-family: var(--font-sans); }
 
@@ -491,16 +498,18 @@ section.posts ul {
 
 section.posts li {
   display: flex;
+  align-items: baseline;
   margin-bottom: calc(0.25 * var(--spacing-s));
+  -webkit-font-smoothing: antialiased;
 }
 
-section.posts li time { order: 1; width: 7em; }
+section.posts li time { order: 1; width: 5em; }
 section.posts li a {
   display: inline-block;
   order: 2;
   width: calc(100% - 7em);
   border: none;
-  font-weight: bold;
+  font-family: var(--font-sans);
 }
 
 /* -----------------------------------
@@ -647,43 +656,4 @@ ul.social svg * { fill: var(--color-mid); }
 
 .collapse input[type="checkbox"]:checked + label span {
   transform: rotate(0deg);
-}
-
-/* -----------------------------------
-Ads
--------------------------------------- */
-
-.ads {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  background: 50% 50% no-repeat rgba(0, 0, 0, .05);
-  border: 1px solid rgba(0, 0, 0, .05);
-  color: rgba(0, 0, 0, .25);
-  text-align: center;
-  position: relative
-}
-.ads a {
-  color: inherit !important;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0
-}
-
-.ads a:active,
-.ads a:focus {
-  color: inherit !important;
-  outline: dotted 1px;
-  outline-offset: -1px
-}
-
-.ads-banners {
-  width: 100%;
-  max-width: 970px
-}
-.ads-banners img {
-  width: 100%;
-  max-width: 970px
 }
