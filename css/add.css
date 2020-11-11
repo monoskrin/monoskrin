@@ -1,0 +1,90 @@
+@charset "UTF-8";
+  
+html {
+  scroll-behavior: smooth;
+  /*-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;*/
+}
+  
+a.logo {
+  font-family: Jenthill, sans-serif;
+  /*font-family: Mosk,sans-serif;*/
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: .02em;
+  line-height: 1.25;
+  margin: 0 auto var(--spacing-s);
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+h1.homeh1 {
+  line-height: 1.2;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: Mosk, sans-serif;
+  letter-spacing: .6px;
+  align-self: flex-start;
+}
+
+img.first, img.second, img.third, img.fourth, img.fifth, img.sixth, img.seventh, img.eighth, img.ninth, img.tenth {
+  display: block;
+  width: 87%;
+  margin-top: calc(12px * 3);
+  margin-bottom: calc(7px * 2);
+}
+
+
+p.breadcrumb, nav.breadcrumb {
+  border-top: 1px solid var(--color-dim);
+  border-bottom: 1px solid var(--color-dim);
+  line-height: 1.5;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  padding: var(--spacing-s) 0;
+  margin: var(--spacing-s) 0;
+  color: var(--color-mid);
+  font-size: var(--font-s);
+}
+.breadcrumb a {color: var(--color-mid);}
+.breadcrumb a:hover {
+  color: var(--color-link);
+}
+.t-o-c {
+    font-size: var(--font-s);
+    line-height: 1.5;
+  	letter-spacing: 0.01em;
+    font-family: var(--font-sans);
+} 
+  
+.author-monoskrin {
+  font-size: var(--font-s);
+    color: var(--color-mid);
+    margin-top: var(--spacing-l);
+    font-family: var(--font-sans);
+}
+.author-monoskrin p {
+    font-feature-settings: "kern", "liga", "onum";
+    margin:0;
+}
+div[id="credit-title"], div[class="credit-title"], span[data-issn='123456']{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+  
+  p.author span {
+    font-size: var(--font-s);
+    color: var(--color-mid);
+    font-family: var(--font-ui);
+    -webkit-font-smoothing: antialiased;
+}
