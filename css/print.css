@@ -8,5 +8,5 @@
 	a { color: #000; }
 	nav ul li { display: none; }
 	article.custom p, article.custom blockquote { color: #000 !important; }
-	script[data-ad-client='ca-pub-4465156341448457'] {display:none;}
+	div[class="google-auto-placed"], ins {display:none;}
 }
