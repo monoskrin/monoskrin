@@ -372,3 +372,7 @@ li{
 .bold {
   font-weight: bold;
 }
+
+#image img {
+  width: 90%
+}
