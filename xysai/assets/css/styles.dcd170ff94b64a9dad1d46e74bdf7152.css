@@ -48,7 +48,7 @@ html {
 
 @font-face {
   font-family: "JetBrainsMono";
-  src: url("/assets/webfonts/JetBrainsMono/JetBrainsMono-Regular.woff2") format("woff2"), url("/assets/webfonts/JetBrainsMono/JetBrainsMono-Regular.woff") format("woff")
+  src: url("../webfonts/JetBrainsMono/JetBrainsMono-Regular.woff2") format("woff2"), url("../webfonts/JetBrainsMono/JetBrainsMono-Regular.woff") format("woff")
 }
 
 body,
